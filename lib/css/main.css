@@ -1,5 +1,5 @@
-@import url("/project-1/lib/css/color.css");
-@import url("/project-1/lib/css/respansive.css");
+@import url("/lib/css/color.css");
+@import url("/lib/css/respansive.css");
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  width: 100vw;
+  height: 100%;
 }
 #header-01 {
   width: 100%;
   height: 40px;
-  background-color: var(--firstcolor);
+  background-color: #f2933f;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -38,8 +40,8 @@ body {
 }
 .header-r-l a:hover {
   margin-left: 0;
-  background-color: var(--forthcolor);
-  color: var(--firstcolor);
+  background-color: #267a80;
+  color: #f2933f;
 }
 .header-r-l a:active {
   opacity: 0.6;
@@ -98,13 +100,13 @@ body {
   transition: 0.1s;
 }
 #menu-div li:hover a {
-  background-color: var(--firstcolor);
+  background-color: #f2933f;
   color: black;
   border-top: 2px solid;
   border-bottom: 2px solid;
 }
 #menu-div li:active a {
-  background-color: var(--black);
+  background-color: black;
   color: white;
 }
 #brand-div {
@@ -122,6 +124,7 @@ body {
   width: 100%;
   height: 80%;
   display: flex;
+  justify-content: space-around;
   direction: rtl;
 }
 #paragraph {
@@ -140,22 +143,26 @@ body {
   font-size: 1.05rem;
   font-weight: 500;
 }
-#paragraph button {
+#paragraph div{
+  display: flex;
+  justify-content: left;
+}
+#paragraph div button {
   width: 8em;
   height: 4em;
-  margin-top: 20px;
-  position: relative;
   background-color: white;
-  top: -80px;
-  left: 125px;
-  float: left;
-  border-style: solid;
+  border-style: solid;  
+  font-family: "Vazirmatn", Tahoma;
+
+}
+#paragraph div button a{
+  font-size:22px ;
 }
 #paragraph button a:hover {
-  background-color: var(--firstcolor);
+  background-color: #f2933f;
 }
 #paragraph button a:active {
-  background-color: var(--black);
+  background-color: black;
   color: white;
 }
 #paragraph button a {
@@ -201,20 +208,22 @@ body {
   position: absolute;
 }
 #prev {
-  left: -40px;
+  left: -30px;
   direction: ltr;
 }
 #next {
   direction: ltr;
-  right: -50px;
+  right: -35px;
 }
 #footer {
   width: 100%;
   height: 100%;
-  background-color: var(--firstcolor);
+  background-color: #f2933f;
+  ;
   border-top: 1px solid;
   display: flex;
   flex-direction: column;
+  font-family: "Vazirmatn", Tahoma;
 }
 #title-div {
   display: flex;
@@ -222,9 +231,13 @@ body {
   align-items: center;
   text-align: justify;
   font-family: "Vazirmatn", Tahoma;
+  height: fit-content;
 }
 #title-div p {
+  display: flex;
+  
   width: 50%;
+  height: fit-content;
   margin-top: 30px;
   font-size: 20px;
   direction: rtl;
@@ -233,45 +246,6 @@ body {
   margin-bottom: 40px;
   margin-top: 50px;
 }
-#option-div {
-  margin-top: 50px;
-  height: 80px;
-  background-color: aqua;
+.class div{
   width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}
-.button-option {
-  margin: 5px 50px;
-  padding: 10px 0;
-  width: 120px;
-  height: 55px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: "Vazirmatn", Tahoma;
-}
-.button-option:hover {
-  background-color: var(--firstcolor);
-}
-.button-option:active {
-  opacity: 0.7;
-}
-#output {
-  font-size: 16px;
-  font-weight: bold;
-  width: 80%;
-  height: 100%;
-  display: inline-block;
-  direction: rtl;
-  text-align: justify;
-  font-family: "Vazirmatn", Tahoma;
-}
-#output-div {
-  margin-top: 20px;
-  width: 100%;
-  height: 200px;
-  text-align: center;
 }
