@@ -72,49 +72,64 @@ body {
   opacity: 0.5;
 }
 #menu-div {
-  width: 15em;
-  height: 10vh;
+  position: relative;
+  display: inline-block;
+  margin: 0px 15px;
 }
-#menu-div ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 10vh;
+.menu-toggle {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
 }
-#menu-div li {
-  display: flex;
-  width: 5em;
-  height: 100%;
-  transition: 0.3s;
+.menus {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 200px;
+  background: #333;
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#menu-div li a {
+.menus li {
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  transition: 0.2s;
+}
+.menus li:last-child {
+  border-bottom: none;
+}
+.menus a {
+  color: white;
   text-decoration: none;
-  color: white;
-  font-weight: 600;
+  display: block;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.1s;
+  height: 100%; cursor: pointer;
 }
-#menu-div li:hover a {
-  background-color: #f2933f;
-  color: black;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
+.menus li:hover {
+  background: red;
 }
-#menu-div li:active a {
-  background-color: black;
-  color: white;
+.menus li:active {
+  background: #555;
+}
+#menu-div:hover .menus {
+  display: block;
 }
 #brand-div {
   display: flex;
   width: 2em;
   height: 3em;
-  margin-right: 2em;
-  margin-left: 1em;
+  margin-right: 50px;
+  margin-left: 8px;
 }
 #brand-div img {
   width: 50px;

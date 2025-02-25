@@ -82,6 +82,9 @@
     .slides {
       width: 100%;
     }
+    .menu-toggle{
+      width: 75px;
+    }
   }
   @media (max-width: 500px) and (min-width: 300px) {
     .slider {
@@ -115,5 +118,15 @@
     #title-div p {
       width: 60% !important;
     }
+    .menu-toggle{
+      width: 50px;
+      font-size: 14px;
+
+    }
+    .menus{
+      width: 125px !important;
+      top: 55px;
+    }
+    
   }
 }
