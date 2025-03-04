@@ -10,8 +10,7 @@
     #paragraph {
       display: flex;
       flex-direction: column;
-      width: 96%;
-      padding-left: 40px;
+      width: 88%;
       height: auto;
     }
     #main-content {
@@ -88,13 +87,15 @@
   }
   @media (max-width: 500px) and (min-width: 300px) {
     .slider {
-      width: 70vw;
+      width: 75vw;
+      height: 200px;
       overflow-x: hidden;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       margin-top: 30px;
     }
     .slides {
       width: 100%;
+      height: 100%;
     }
     #header-01,
     #header-02 {
@@ -107,7 +108,6 @@
       height: 100%;
     }
     #brand-div {
-      margin-right: 2em;
     }
     #menu-div ul {
       width: 13em;
@@ -127,6 +127,19 @@
       width: 125px !important;
       top: 55px;
     }
-    
+    #pic-par{
+      padding: 0;
+    }
+    .slides img{
+      height: 100% !important;
+      width: 250px !important;
+    }
+    .slider-container{
+      height:250px ;
+    }
+    #paragraph {
+      margin: 20px 30px;
+    }
+
   }
 }
