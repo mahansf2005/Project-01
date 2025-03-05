@@ -114,7 +114,8 @@ body {
   text-decoration: none;
   display: block;
   width: 100%;
-  height: 100%; cursor: pointer;
+  height: 100%;
+  cursor: pointer;
 }
 .menus li:hover {
   background: red;
@@ -159,7 +160,7 @@ body {
   font-size: 1.05rem;
   font-weight: 500;
 }
-#paragraph div{
+#paragraph div {
   display: flex;
   justify-content: left;
 }
@@ -167,12 +168,11 @@ body {
   width: 8em;
   height: 4em;
   background-color: white;
-  border-style: solid;  
+  border-style: solid;
   font-family: "Vazirmatn", Tahoma;
-
 }
-#paragraph div button a{
-  font-size:22px ;
+#paragraph div button a {
+  font-size: 22px;
 }
 #paragraph button a:hover {
   background-color: #f2933f;
@@ -201,6 +201,7 @@ body {
 }
 .slides {
   display: flex;
+  direction: ltr;
   width: 100%;
   justify-content: end;
   transition: transform 0.2s ease-in;
@@ -235,7 +236,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #f2933f;
-  ;
   border-top: 1px solid;
   display: flex;
   flex-direction: column;
@@ -251,7 +251,7 @@ body {
 }
 #title-div p {
   display: flex;
-  
+
   width: 50%;
   height: fit-content;
   margin-top: 30px;
@@ -262,6 +262,12 @@ body {
   margin-bottom: 40px;
   margin-top: 50px;
 }
-.class div{
+.class div {
   width: 100%;
+}
+.class {
+  margin: 0px 20px;
+}
+.class div p {
+  text-align: center;
 }
